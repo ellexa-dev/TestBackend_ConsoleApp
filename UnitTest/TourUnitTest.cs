@@ -1,13 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace UnitTest
 {
-    /// <summary>
-    /// Description résumée pour TourUnitTest
-    /// </summary>
     [TestClass]
     public class TourUnitTest
     {
@@ -16,13 +10,13 @@ namespace UnitTest
         {
             var singe = new Exercice1.Singe();
             var tour = singe.RecupererTourEnCours(2);
-            var typeTour = tour.GetTypeTour();
+            var typeTour = tour.ObtenirTypeTour();
         }
 
         [TestMethod]
-        public void TestGetNewTour()
+        public void TestObtenirNouveauTour()
         {
-            var tour = Exercice1.Models.Tour.GetNewTour();
+            var tour = Exercice1.Models.Tour.ObtenirNouveauTour();
         }
     }
 }

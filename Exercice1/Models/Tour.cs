@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercice1.Models
 {
@@ -18,7 +15,7 @@ namespace Exercice1.Models
         public string type;
         public string description;
 
-        public TypeTour GetTypeTour()
+        public TypeTour ObtenirTypeTour()
         {
             if (type == TypeTour.Accrobatie.ToString())
                 return TypeTour.Accrobatie;
@@ -40,7 +37,7 @@ namespace Exercice1.Models
             new Tour(){name = "Jouer du piano", type = TypeTour.Musique.ToString(), description="Le singe joue du piano" }
         };
 
-        public static Tour GetNewTour()
+        public static Tour ObtenirNouveauTour()
         {
             Random r = new Random();
             int tourNb = r.Next(0, 9);

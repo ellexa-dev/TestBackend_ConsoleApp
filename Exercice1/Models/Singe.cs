@@ -1,9 +1,6 @@
 ﻿using Exercice1.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercice1
 {
@@ -22,7 +19,7 @@ namespace Exercice1
             {
                 while (tours.Count == i)
                 {
-                    Tour tourEnApprentissage = Tour.GetNewTour();
+                    Tour tourEnApprentissage = Tour.ObtenirNouveauTour();
                     bool isAlreadyLearned = false;
                     foreach(Tour tour in tours)
                     {

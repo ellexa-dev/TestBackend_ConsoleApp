@@ -32,7 +32,7 @@ namespace Exercice1
         public static int ChoixTour(Dresseur dresseur, Spectateur spectateur)
         {
             Console.WriteLine("Le dresseur énumère les tours connus par son singe :");
-            int nbTours = dresseur.GetNbToursSinge();
+            int nbTours = dresseur.RecupererNbToursSinge();
             Console.WriteLine("Quel tour voulez-vous que le dresseur demande à son singe de démontrer?");
             string choixTour = "";
             int idTour = 0;
@@ -52,7 +52,7 @@ namespace Exercice1
         public static void MontrerTour(Dresseur dresseur, Spectateur spectateur, int idTour)
         {
             dresseur.singe.DemonstrationTour(idTour);
-            Console.WriteLine(spectateur.GetReaction(dresseur.singe.RecupererTourEnCours(idTour)));
+            Console.WriteLine(spectateur.ObtenirReaction(dresseur.singe.RecupererTourEnCours(idTour)));
             
         }
 

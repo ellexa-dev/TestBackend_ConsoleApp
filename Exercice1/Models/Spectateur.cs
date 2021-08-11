@@ -5,9 +5,9 @@ namespace Exercice1
     public class Spectateur
     {
 
-        public string GetReaction(Tour tourSinge)
+        public string ObtenirReaction(Tour tourSinge)
         {
-            if (tourSinge.GetTypeTour() == Tour.TypeTour.Accrobatie)
+            if (tourSinge.ObtenirTypeTour() == Tour.TypeTour.Accrobatie)
                 return "*Le spectateur applaudit*";
             else
                 return "*Le spectateur siffle*";
